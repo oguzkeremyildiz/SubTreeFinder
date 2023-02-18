@@ -1,189 +1,188 @@
-1 How ADJP/JJ/RB do/did/does/can/could/must/would NP/NNP/NNPS VB NP/NNP/NNPS
-How ADJP/JJ/RB is/are/was/were NP/NNP/NNPS
-How ADVP do/did/does/can/could/must/would NP/NNP/NNPS VB/VBD
-How can/could NP/NNP/NNPS be VBD
-How do/did/does NP/NNP/NNPS VB NP/NNP/NNPS
-How do/did/does NP/NNP/NNPS VB
-How is/are/was/were NP/NNP/NNPS VBD ADVP
-How is/are/was/were NP/NNP/NNPS VBD
-How will/would NP/NNP/NNPS be VBD
-How will/would NP/NNP/NNPS VB NP/NNP/NNPS PP
-NP/NNP/NNPS can/could VB How ADJP/JJ/RB NP/NNP/NNPS
-NP/NNP/NNPS VBD PP IN How ADJP/JJ/RB
-NP/NNP/NNPS VBD/VB How ADJP/JJ/RB
-NP/NNP/NNPS VBD/VB NP/NNP/NNPS How ADJP/JJ/RB
-IN How Adj do/did/does NP/NNP/NNPS VBD NP/NNP/NNPS
-IN How Adj do/did/does NP/NNP/NNPS VBD
-IN How Adj is/are/was/were NP/NNP/NNPS VBD
-How many NP/NNP/NNPS is/are/was/were ADJP/JJ/RB
-How many NP/NNP/NNPS is/are/was/were VBD
-How many NP/NNP/NNPS VB NP/NNP/NNPS
-How many NP/NNP/NNPS VB/VBD
-How much do/did/does NP/NNP/NNPS VB
-How much is/are/was/were NP/NNP/NNPS NP/NNP/NNPS
-How much is/are/was/were NP/NNP/NNPS
-How much NP/NNP/NNPS do/did/does NP/NNP/NNPS VB
-How much NP/NNP/NNPS is/are/was/were NP/NNP/NNPS
-How much NP/NNP/NNPS is/are/was/were ADJP/JJ/RB
-How much NP/NNP/NNPS is/are/was/were VBD
-How much of NP/NNP/NNPS VBD/VB NP/NNP/NNPS
-How much of NP/NNP/NNPS VBD/VB
-How much VBD NP/NNP/NNPS
-How much VBD PP NP/NNP/NNPS
-NP/NNP/NNPS VBD/VB how much NP/NNP/NNPS
-IN What NP/NNP/NNPS is/are/was/were NP/NNP/NNPS VBD
-IN What NP/NNP/NNPS do/did/does/will NP/NNP/NNPS VB
-IN What do/did/does NP/NNP/NNPS VB
-IN What do/did/does NP/NNP/NNPS VB NP/NNP/NNPS
-What can/could/would/must NP/NNP/NNPS VB
-What can/could/would/must VB NP/NNP/NNPS
-What do/did/does NP/NNP/NNPS VB NP/NNP/NNPS
-What do/did/does NP/NNP/NNPS VB
-What is/are/was/were NP/NNP/NNPS VB/VBD PP
-What is/are/was/were NP/NNP/NNPS VBD
-What is/are/was/were NP/NNP/NNPS
-What NP/NNP/NNPS do/did/does NP/NNP/NNPS VB
-What NP/NNP/NNPS is/are/was/were NP/NNP/NNPS IN
-What is/are/was/were NP/NNP/NNPS PP
-What NP/NNP/NNPS is/are/was/were NP/NNP/NNPS
-What NP/NNP/NNPS is/are/was/were VBD
-What NP/NNP/NNPS VBD/VB NP/NNP/NNPS
-What VBD/VB NP/NNP/NNPS
-NP/NNP/NNPS VBD/VB ADJP/JJ/RB until/since when
-Since When has/have NP/NNP/NNPS been VBD
-Since When has/have NP/NNP/NNPS VBD
-When do/did/does NP/NNP/NNPS VB
-When do/did/does NP/NNP/NNPS VB NP/NNP/NNPS
-When do/did/does NP/NNP/NNPS VB TO VBD NP/NNP/NNPS
-When do/did/does NP/NNP/NNPS VB TO VBD
-When do/did/does NP/NNP/NNPS VB VBG
-When do/did/does NP/NNP/NNPS VB PP
-When is/are/was/were NP/NNP/NNPS VBD
-When is/are/was/were NP/NNP/NNPS
-When is/are/was/were NP/NNP/NNPS PP
-When may/must/can/could/will NP/NNP/NNPS be VBD
-IN Where do/did/does/will NP/NNP/NNPS VB NP/NNP/NNPS
-IN Where do/did/does/will NP/NNP/NNPS VB
-Where do/did/does NP/NNP/NNPS VB NP/NNP/NNPS
-Where do/did/does NP/NNP/NNPS VB
-Where is/are/was/were NP/NNP/NNPS ADVP ADJP/JJ/RB
-Where is/are/was/were NP/NNP/NNPS ADVP VBD
-Where is/are/was/were NP/NNP/NNPS PP
-Where is/are/was/were NP/NNP/NNPS VBD
-Where is/are/was/were NP/NNP/NNPS VBG NP/NNP/NNPS
-Where is/are/was/were NP/NNP/NNPS VBG
-Where is/are/was/were NP/NNP/NNPS
-NP/NNP/NNPS is/are/was/were NP/NNP/NNPS IN Which NP/NNP/NNPS
-NP/NNP/NNPS is/are/was/were NP/NNP/NNPS Which NP/NNP/NNPS
-NP/NNP/NNPS is/are/was/were IN Which NP/NNP/NNPS
-NP/NNP/NNPS is/are/was/were VBD to VB Which NP/NNP/NNPS
-NP/NNP/NNPS is/are/was/were VBD IN Which NP/NNP/NNPS
-NP/NNP/NNPS is/are/was/were Which NP/NNP/NNPS
-NP/NNP/NNPS IN Which NP/NNP/NNPS VBD PP
-NP/NNP/NNPS VBD IN Which NP/NNP/NNPS
-NP/NNP/NNPS VBD Which NP/NNP/NNPS
-NP/NNP/NNPS VBD/VB NP/NNP/NNPS IN Which NP/NNP/NNPS
-NP/NNP/NNPS VBD Which Noun PP
-NP/NNP/NNPS VBD/VB IN Which NP/NNP/NNPS
-NP/NNP/NNPS VBD/VB Which NP/NNP/NNPS PP
-NP/NNP/NNPS VBD/VB Which NP/NNP/NNPS
-PP NP/NNP/NNPS is/are/was/were VBD IN Which NP/NNP/NNPS
-IN Which NP/NNP/NNPS do/did/does NP/NNP/NNPS VB NP/NNP/NNPS
-IN Which NP/NNP/NNPS do/did/does NP/NNP/NNPS VB
-IN Which NP/NNP/NNPS is/are/was/were NP/NNP/NNPS VB
-IN Which NP/NNP/NNPS is/are/was/were NP/NNP/NNPS
-Which NP/NNP/NNPS do/did/does NP/NNP/NNPS VB
-Which NP/NNP/NNPS had VBD NP/NNP/NNPS
-Which NP/NNP/NNPS is/are/was/were VBD PP
-Which NP/NNP/NNPS is/are/was/were VBD
-Which NP/NNP/NNPS VBD/VB NP/NNP/NNPS PP
-Which NP/NNP/NNPS VBD/VB NP/NNP/NNPS
-Which NP/NNP/NNPS VBD/VB
-NP/NNP/NNPS is/are/was/were VBN IN Who
-NP/NNP/NNPS VBD/VB IN Who
-NP/NNP/NNPS VBD/VB Who PP
-Who ADVP VBD/VB NP/NNP/NNPS
-Who ADVP VBD/VB PP
-Who do/did/does NP/NNP/NNPS VB IN
-Who do/did/does NP/NNP/NNPS VB  NP/NNP/NNPS
-Who do/did/does NP/NNP/NNPS VB
-Who is/are/was/were ADJP/JJ/RB PP
-Who is/are/was/were ADVP NP/NNP/NNPS
-Who is/are/was/were NP/NNP/NNPS ADJP/JJ/RB IN
-Who is/are/was/were NP/NNP/NNPS VBG
-Who is/are/was/were NP/NNP/NNPS VBN IN
-Who is/are/was/were NP/NNP/NNPS
-Who is/are/was/were PP
-Who is/are/was/were VBN NP/NNP/NNPS
-Who is/are/was/were VBN TO VB
-Who is/are/was/were VBN/VBG PP
-Who is/are/was/were VBN/VBG
-Who may/must/can/could/will/would NP/NNP/NNPS VB
-Who may/must/can/could/will/would VB NP/NNP/NNPS
-Who VBD/VB NP/NNP/NNPS ADJP/JJ/RB
-Who VBD/VB NP/NNP/NNPS ADVP
-Who VBD/VB NP/NNP/NNPS CC NP/NNP/NNPS
-Who VBD/VB NP/NNP/NNPS NP/NNP/NNPS
-Who VBD/VB NP/NNP/NNPS PP
-Who VBD/VB NP/NNP/NNPS RP
-Who VBD/VB NP/NNP/NNPS
-Who VBD/VB PP
-Who VBD/VB RP NP/NNP/NNPS
-Who VBD/VB RP PP
-Who VBD/VB TO VB NP/NNP/NNPS
-Who VBD/VB TO VB
-Who VBD/VB VBN NP/NNP/NNPS
-IN Whom do/did/does NP/NNP/NNPS VB
-IN Whom is/are/was/were NP/NNP/NNPS VBD
-NP/NNP/NNPS is/are/was/were VBN IN Whom
-NP/NNP/NNPS VBD/VB Whose NP/NNP/NNPS
-IN Whose NP/NNP/NNPS is/are/was/were NP/NNP/NNPS VBD
-Whose NP/NNP/NNPS ADVP VBD/VB NP/NNP/NNPS
-Whose NP/NNP/NNPS do/did/does NP/NNP/NNPS VB
-Whose NP/NNP/NNPS is/are/was/were NP/NNP/NNPS
-Whose NP/NNP/NNPS is/are/was/were VBN NP/NNP/NNPS
-Whose NP/NNP/NNPS is/are/was/were VBN
-Whose NP/NNP/NNPS VBD/VB VBN
-Why do/did/does NP/NNP/NNPS VB IN NP/NNP/NNPS
-Why do/did/does NP/NNP/NNPS VB NP/NNP/NNPS
-Why do/did/does NP/NNP/NNPS VB TO VBG NP/NNP/NNPS
-Why do/did/does NP/NNP/NNPS VB TO VBG
-Why do/did/does NP/NNP/NNPS VB VBG
-Why do/did/does NP/NNP/NNPS VB
-Why has/have NP/NNP/NNPS been VBD
-Why is/are/was/were NP/NNP/NNPS ADJP/JJ/RB IN NP/NNP/NNPS
-Why is/are/was/were NP/NNP/NNPS VBD
-Why is/are/was/were NP/NNP/NNPS ADJP/JJ/RB
-Why is/are/was/were NP/NNP/NNPS VB PP
-Why is/are/was/were NP/NNP/NNPS VBD NP/NNP/NNPS
-Why is/are/was/were NP/NNP/NNPS VBG
-Why is/are/was/were NP/NNP/NNPS VBG NP/NNP/NNPS
-is/are/was/were NP/NNP/NNPS ADJP/JJ/RB
-is/are/was/were NP/NNP/NNPS ADJP/JJ/RB IN NP/NNP/NNPS
-is/are/was/were NP/NNP/NNPS ADJP/JJ/RB TO VBG NP/NNP/NNPS
-is/are/was/were NP/NNP/NNPS ADJP/JJ/RB TO VBG
-is/are/was/were NP/NNP/NNPS ADJP/JJ/RB
-is/are/was/were NP/NNP/NNPS JJR than NP/NNP/NNPS
-is/are/was/were NP/NNP/NNPS NP/NNP/NNPS
-is/are/was/were NP/NNP/NNPS VBD NP/NNP/NNPS
-is/are/was/were NP/NNP/NNPS VBD PP
-do/did/does NP/NNP/NNPS VB NP/NNP/NNPS
-do/did/does NP/NNP/NNPS VB ADJP/JJ/RB
-What VB/VBD PP
-Whose NP/NNP/NNPS VB/VBD NP/NNP/NNPS
-How many NP/NNP/NNPS is/are/was/were NP/NNP/NNPS
-What is/are/was/were PP
-Whose NP/NNP/NNPS VB NP/NNP/NNPS
-Whose NP/NNP/NNPS is/are/was/were NP/NNP/NNPS
-Whose NP/NNP/NNPS ADVP VB NP/NNP/NNPS
-Why is /are/was/were NP/NNP/NNPS NP/NNP/NNPS
-IN What is/are/was/were NP/NNP/NNPS VBD
-How many NP/NNP/NNPS do/does/did NP/NNP/NNPS VB
-How many NP/NNP/NNPS VB PP
-How many NP/NNP/NNPS is/are/was/were NP/NNP/NNPS
-How many NP/NNP/NNPS is/are/was/were PP
-How ADJP/JJ/RB do/did/does/can/could/must/would NP/NNP/NNPS VB/VBD
-What is/are/was/were VBD PP
-When is/are/was/were NP/NNP/NNPS ADVP VBD
-How many NP/NNP/NNPS is/are/was/were there
-Who is/are/was/were NP/NNP/NNPS PP
+1 How ADJP/JJ/RB do/did/does/can/could/must/would NP/NNP/NNS/NNPS VB NP/NNP/NNS/NNPS
+2 How ADJP/JJ/RB is/are/was/were NP/NNP/NNS/NNPS
+3 How ADVP do/did/does/can/could/must/would NP/NNP/NNS/NNPS VB
+4 How can/could NP/NNP/NNS/NNPS be VBD/VBN
+5 How do/did/does NP/NNP/NNS/NNPS VB NP/NNP/NNS/NNPS
+6 How do/did/does NP/NNP/NNS/NNPS VB
+8 How is/are/was/were NP/NNP/NNS/NNPS VBD/VBN ADVP
+9 How is/are/was/were NP/NNP/NNS/NNPS VBD/VBN
+10 How will/would NP/NNP/NNS/NNPS be VBD/VBN
+11 How will/would NP/NNP/NNS/NNPS VB NP/NNP/NNS/NNPS PP
+12 NP/NNP/NNS/NNPS can/could VB How ADJP/JJ/RB NP/NNP/NNS/NNPS
+13 NP/NNP/NNS/NNPS VBD PP IN How ADJP/JJ/RB
+14 NP/NNP/NNS/NNPS VBD/VB How ADJP/JJ/RB
+15 NP/NNP/NNS/NNPS VBD/VB NP/NNP/NNS/NNPS How ADJP/JJ/RB
+16 IN How Adj do/did/does NP/NNP/NNS/NNPS VB NP/NNP/NNS/NNPS
+17 IN How Adj do/did/does NP/NNP/NNS/NNPS VB
+18 IN How Adj is/are/was/were NP/NNP/NNS/NNPS VBD/VBN
+19 How many NP/NNP/NNS/NNPS is/are/was/were ADJP/JJ/RB
+20 How many NP/NNP/NNS/NNPS is/are/was/were VBD/VBN
+21 How many NP/NNP/NNS/NNPS VBP/VBZ/VBD NP/NNP/NNS/NNPS
+22 How many NP/NNP/NNS/NNPS VBP/VBZ/VBD
+24 How much do/did/does NP/NNP/NNS/NNPS VB
+25 How much is/are/was/were NP/NNP/NNS/NNPS NP/NNP/NNS/NNPS
+26 How much is/are/was/were NP/NNP/NNS/NNPS
+27 How much NP/NNP/NNS/NNPS do/did/does NP/NNP/NNS/NNPS VB
+28 How much NP/NNP/NNS/NNPS is/are/was/were NP/NNP/NNS/NNPS
+29 How much NP/NNP/NNS/NNPS is/are/was/were ADJP/JJ/RB
+30 How much NP/NNP/NNS/NNPS is/are/was/were VBD/VBN
+31 How much of NP/NNP/NNS/NNPS VBP/VBZ/VBD NP/NNP/NNS/NNPS
+32 How much of NP/NNP/NNS/NNPS VBP/VBZ/VBD
+33 How much VBD NP/NNP/NNS/NNPS
+34 How much VBD PP NP/NNP/NNS/NNPS
+35 NP/NNP/NNS/NNPS VBP/VBZ/VBD how much NP/NNP/NNS/NNPS
+36 IN What NP/NNP/NNS/NNPS is/are/was/were NP/NNP/NNS/NNPS VBD/VBN
+37 IN What NP/NNP/NNS/NNPS do/did/does/will NP/NNP/NNS/NNPS VB
+38 IN What do/did/does NP/NNP/NNS/NNPS VB
+39 IN What do/did/does NP/NNP/NNS/NNPS VB NP/NNP/NNS/NNPS
+40 What can/could/would/must NP/NNP/NNS/NNPS VB
+41 What can/could/would/must VB NP/NNP/NNS/NNPS
+42 What do/did/does NP/NNP/NNS/NNPS VB NP/NNP/NNS/NNPS
+43 What do/did/does NP/NNP/NNS/NNPS VB
+44 What is/are/was/were NP/NNP/NNS/NNPS VBG PP
+45 What is/are/was/were NP/NNP/NNS/NNPS VBD/VBN
+46 What is/are/was/were NP/NNP/NNS/NNPS
+47 What NP/NNP/NNS/NNPS do/did/does NP/NNP/NNS/NNPS VB
+48 What NP/NNP/NNS/NNPS is/are/was/were NP/NNP/NNS/NNPS IN
+49 What is/are/was/were NP/NNP/NNS/NNPS PP
+50 What NP/NNP/NNS/NNPS is/are/was/were NP/NNP/NNS/NNPS
+51 What NP/NNP/NNS/NNPS is/are/was/were VBD/VBN
+52 What NP/NNP/NNS/NNPS VBP/VBZ/VBD NP/NNP/NNS/NNPS
+53 What VBP/VBZ/VBD NP/NNP/NNS/NNPS
+54 NP/NNP/NNS/NNPS VBP/VBZ/VBD ADJP/JJ/RB until/since when
+55 Since When has/have NP/NNP/NNS/NNPS been VBD/VBN
+56 Since When has/have NP/NNP/NNS/NNPS VBD/VBN
+57 When do/did/does NP/NNP/NNS/NNPS VB
+58 When do/did/does NP/NNP/NNS/NNPS VB NP/NNP/NNS/NNPS
+59 When do/did/does NP/NNP/NNS/NNPS VB TO VBD NP/NNP/NNS/NNPS
+60 When do/did/does NP/NNP/NNS/NNPS VB TO VBD
+61 When do/did/does NP/NNP/NNS/NNPS VB VBG
+62 When do/did/does NP/NNP/NNS/NNPS VB PP
+63 When is/are/was/were NP/NNP/NNS/NNPS VBD/VBN
+64 When is/are/was/were NP/NNP/NNS/NNPS
+65 When is/are/was/were NP/NNP/NNS/NNPS PP
+66 When may/must/can/could/will NP/NNP/NNS/NNPS be VBD/VBN
+67 IN Where do/did/does/will NP/NNP/NNS/NNPS VB NP/NNP/NNS/NNPS
+68 IN Where do/did/does/will NP/NNP/NNS/NNPS VB
+69 Where do/did/does NP/NNP/NNS/NNPS VB NP/NNP/NNS/NNPS
+70 Where do/did/does NP/NNP/NNS/NNPS VB
+71 Where is/are/was/were NP/NNP/NNS/NNPS ADVP ADJP/JJ/RB
+72 Where is/are/was/were NP/NNP/NNS/NNPS ADVP VBD/VBN
+73 Where is/are/was/were NP/NNP/NNS/NNPS PP
+74 Where is/are/was/were NP/NNP/NNS/NNPS VBD/VBN
+75 Where is/are/was/were NP/NNP/NNS/NNPS VBG NP/NNP/NNS/NNPS
+76 Where is/are/was/were NP/NNP/NNS/NNPS VBG
+77 Where is/are/was/were NP/NNP/NNS/NNPS
+78 NP/NNP/NNS/NNPS is/are/was/were NP/NNP/NNS/NNPS IN Which NP/NNP/NNS/NNPS
+79 NP/NNP/NNS/NNPS is/are/was/were NP/NNP/NNS/NNPS Which NP/NNP/NNS/NNPS
+80 NP/NNP/NNS/NNPS is/are/was/were IN Which NP/NNP/NNS/NNPS
+81 NP/NNP/NNS/NNPS is/are/was/were VBD/VBN to VB Which NP/NNP/NNS/NNPS
+82 NP/NNP/NNS/NNPS is/are/was/were VBD/VBN IN Which NP/NNP/NNS/NNPS
+83 NP/NNP/NNS/NNPS is/are/was/were Which NP/NNP/NNS/NNPS
+84 NP/NNP/NNS/NNPS IN Which NP/NNP/NNS/NNPS VBP/VBZ/VBD PP
+85 NP/NNP/NNS/NNPS VBP/VBZ/VBD IN Which NP/NNP/NNS/NNPS
+86 NP/NNP/NNS/NNPS VBP/VBZ/VBD Which NP/NNP/NNS/NNPS
+87 NP/NNP/NNS/NNPS VBP/VBZ/VBD NP/NNP/NNS/NNPS IN Which NP/NNP/NNS/NNPS
+88 NP/NNP/NNS/NNPS VBP/VBZ/VBD Which Noun PP
+89 NP/NNP/NNS/NNPS VBP/VBZ/VBD IN Which NP/NNP/NNS/NNPS
+90 NP/NNP/NNS/NNPS VBP/VBZ/VBD Which NP/NNP/NNS/NNPS PP
+91 NP/NNP/NNS/NNPS VBP/VBZ/VBD Which NP/NNP/NNS/NNPS
+92 PP NP/NNP/NNS/NNPS is/are/was/were VBD/VBN IN Which NP/NNP/NNS/NNPS
+93 IN Which NP/NNP/NNS/NNPS do/did/does NP/NNP/NNS/NNPS VB NP/NNP/NNS/NNPS
+94 IN Which NP/NNP/NNS/NNPS do/did/does NP/NNP/NNS/NNPS VB
+95 IN Which NP/NNP/NNS/NNPS is/are/was/were NP/NNP/NNS/NNPS VBD/VBN
+96 IN Which NP/NNP/NNS/NNPS is/are/was/were NP/NNP/NNS/NNPS
+97 Which NP/NNP/NNS/NNPS do/did/does NP/NNP/NNS/NNPS VB
+98 Which NP/NNP/NNS/NNPS had VBD/VBN NP/NNP/NNS/NNPS
+99 Which NP/NNP/NNS/NNPS is/are/was/were VBD/VBN PP
+100 Which NP/NNP/NNS/NNPS is/are/was/were VBD/VBN
+101 Which NP/NNP/NNS/NNPS VBP/VBZ/VBD NP/NNP/NNS/NNPS PP
+102 Which NP/NNP/NNS/NNPS VBP/VBZ/VBD NP/NNP/NNS/NNPS
+103 Which NP/NNP/NNS/NNPS VBP/VBZ/VBD
+104 NP/NNP/NNS/NNPS is/are/was/were VBN IN Who
+105 NP/NNP/NNS/NNPS VBP/VBZ/VBD IN Who
+106 NP/NNP/NNS/NNPS VBP/VBZ/VBD Who PP
+107 Who ADVP VBP/VBZ/VBD NP/NNP/NNS/NNPS
+108 Who ADVP VBP/VBZ/VBD PP
+109 Who do/did/does NP/NNP/NNS/NNPS VB IN
+110 Who do/did/does NP/NNP/NNS/NNPS VB NP/NNP/NNS/NNPS
+111 Who do/did/does NP/NNP/NNS/NNPS VB
+112 Who is/are/was/were ADJP/JJ/RB PP
+113 Who is/are/was/were ADVP NP/NNP/NNS/NNPS
+114 Who is/are/was/were NP/NNP/NNS/NNPS ADJP/JJ/RB IN
+116 Who is/are/was/were NP/NNP/NNS/NNPS VBG
+117 Who is/are/was/were NP/NNP/NNS/NNPS VBN IN
+118 Who is/are/was/were NP/NNP/NNS/NNPS
+119 Who is/are/was/were PP
+120 Who is/are/was/were VBN NP/NNP/NNS/NNPS
+121 Who is/are/was/were VBN TO VB
+122 Who is/are/was/were VBN/VBG PP
+123 Who is/are/was/were VBN/VBG
+124 Who may/must/can/could/will/would NP/NNP/NNS/NNPS VB
+125 Who may/must/can/could/will/would VB NP/NNP/NNS/NNPS
+126 Who VBP/VBZ/VBD NP/NNP/NNS/NNPS ADJP/JJ/RB
+127 Who VBP/VBZ/VBD NP/NNP/NNS/NNPS ADVP
+128 Who VBP/VBZ/VBD NP/NNP/NNS/NNPS CC NP/NNP/NNS/NNPS
+129 Who VBP/VBZ/VBD NP/NNP/NNS/NNPS NP/NNP/NNS/NNPS
+130 Who VBP/VBZ/VBD NP/NNP/NNS/NNPS PP
+131 Who VBP/VBZ/VBD NP/NNP/NNS/NNPS RP
+132 Who VBP/VBZ/VBD NP/NNP/NNS/NNPS
+133 Who VBP/VBZ/VBD PP
+134 Who VBP/VBZ/VBD RP NP/NNP/NNS/NNPS
+135 Who VBP/VBZ/VBD RP PP
+136 Who VBP/VBZ/VBD TO VB NP/NNP/NNS/NNPS
+137 Who VBP/VBZ/VBD TO VB
+138 Who VBP/VBZ/VBD VBG NP/NNP/NNS/NNPS
+139 IN Whom do/did/does NP/NNP/NNS/NNPS VB
+140 IN Whom is/are/was/were NP/NNP/NNS/NNPS VBD/VBN
+141 NP/NNP/NNS/NNPS is/are/was/were VBN IN Whom
+142 NP/NNP/NNS/NNPS VBP/VBZ/VBD Whose NP/NNP/NNS/NNPS
+143 IN Whose NP/NNP/NNS/NNPS is/are/was/were NP/NNP/NNS/NNPS VBD/VBN
+144 Whose NP/NNP/NNS/NNPS ADVP VBP/VBZ/VBD NP/NNP/NNS/NNPS
+145 Whose NP/NNP/NNS/NNPS do/did/does NP/NNP/NNS/NNPS VB
+146 Whose NP/NNP/NNS/NNPS is/are/was/were NP/NNP/NNS/NNPS
+147 Whose NP/NNP/NNS/NNPS is/are/was/were VBN NP/NNP/NNS/NNPS
+148 Whose NP/NNP/NNS/NNPS is/are/was/were VBN
+149 Whose NP/NNP/NNS/NNPS VBD/VB VBN
+150 Why do/did/does NP/NNP/NNS/NNPS VB IN NP/NNP/NNS/NNPS
+151 Why do/did/does NP/NNP/NNS/NNPS VB NP/NNP/NNS/NNPS
+152 Why do/did/does NP/NNP/NNS/NNPS VB TO VBG NP/NNP/NNS/NNPS
+153 Why do/did/does NP/NNP/NNS/NNPS VB TO VBG
+154 Why do/did/does NP/NNP/NNS/NNPS VB VBG
+155 Why do/did/does NP/NNP/NNS/NNPS VB
+156 Why has/have NP/NNP/NNS/NNPS been VBD/VBN
+157 Why is/are/was/were NP/NNP/NNS/NNPS ADJP/JJ/RB IN NP/NNP/NNS/NNPS
+158 Why is/are/was/were NP/NNP/NNS/NNPS VBD/VBN
+159 Why is/are/was/were NP/NNP/NNS/NNPS ADJP/JJ/RB
+160 Why is/are/was/were NP/NNP/NNS/NNPS VB PP
+161 Why is/are/was/were NP/NNP/NNS/NNPS VBD/VBN NP/NNP/NNS/NNPS
+162 Why is/are/was/were NP/NNP/NNS/NNPS VBG
+163 Why is/are/was/were NP/NNP/NNS/NNPS VBG NP/NNP/NNS/NNPS
+164 is/are/was/were NP/NNP/NNS/NNPS ADJP/JJ/RB
+165 is/are/was/were NP/NNP/NNS/NNPS ADJP/JJ/RB IN NP/NNP/NNS/NNPS
+166 is/are/was/were NP/NNP/NNS/NNPS ADJP/JJ/RB TO VBG NP/NNP/NNS/NNPS
+167 is/are/was/were NP/NNP/NNS/NNPS ADJP/JJ/RB TO VBG
+169 is/are/was/were NP/NNP/NNS/NNPS JJR than NP/NNP/NNS/NNPS
+170 is/are/was/were NP/NNP/NNS/NNPS NP/NNP/NNS/NNPS
+171 is/are/was/were NP/NNP/NNS/NNPS VBD/VBN NP/NNP/NNS/NNPS
+172 is/are/was/were NP/NNP/NNS/NNPS VBD/VBN PP
+174 do/did/does NP/NNP/NNS/NNPS VB NP/NNP/NNS/NNPS
+175 do/did/does NP/NNP/NNS/NNPS VB ADJP/JJ/RB
+176 What VB/VBD PP
+177 Whose NP/NNP/NNS/NNPS VBP/VBZ/VBD NP/NNP/NNS/NNPS
+178 How many NP/NNP/NNS/NNPS is/are/was/were NP/NNP/NNS/NNPS
+179 What is/are/was/were PP
+180 Whose NP/NNP/NNS/NNPS VBP/VBZ/VBD NP/NNP/NNS/NNPS
+181 Whose NP/NNP/NNS/NNPS is/are/was/were NP/NNP/NNS/NNPS
+182 Whose NP/NNP/NNS/NNPS ADVP VB NP/NNP/NNS/NNPS
+183 Why is /are/was/were NP/NNP/NNS/NNPS NP/NNP/NNS/NNPS
+184 IN What is/are/was/were NP/NNP/NNS/NNPS VBD/VBN
+185 How many NP/NNP/NNS/NNPS do/does/did NP/NNP/NNS/NNPS VB
+186 How many NP/NNP/NNS/NNPS VBP/VBZ/VBD PP
+187 How many NP/NNP/NNS/NNPS is/are/was/were NP/NNP/NNS/NNPS
+188 How many NP/NNP/NNS/NNPS is/are/was/were PP
+189 How ADJP/JJ/RB do/did/does/can/could/must/would NP/NNP/NNS/NNPS VB
+190 What is/are/was/were VBD/VBN PP
+191 When is/are/was/were NP/NNP/NNS/NNPS ADVP VBD
+192 How many NP/NNP/NNS/NNPS is/are/was/were there
+193 Who is/are/was/were NP/NNP/NNS/NNPS PP
