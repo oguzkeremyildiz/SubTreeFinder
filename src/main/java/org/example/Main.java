@@ -45,29 +45,25 @@ public class Main {
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        HashMap<Integer, Integer> map = new HashMap<>();
-        Scanner source = new Scanner(new File("mapping.txt"));
-        int k = 0;
-        while (source.hasNext()) {
-            int current = source.nextInt();
-            map.put(k, current);
-            k++;
-        }
-        source.close();
+        HashMap<Integer, String> map = new HashMap<>();
         TreeBank bank = new TreeBank(new File("Trees"));
         LinkedList<LinkedList<HashSet<String>>> list = new LinkedList<>();
-        source = new Scanner(new File("find.txt"));
+        Scanner source = new Scanner(new File("find.txt"));
+        int k = 0;
         while (source.hasNext()) {
             String current = source.nextLine();
             list.add(new LinkedList<>());
             String[] firstSplit = current.split(" ");
-            for (String s : firstSplit) {
+            map.put(k, firstSplit[0]);
+            for (int i = 1; i < firstSplit.length; i++) {
+                String s = firstSplit[i];
                 list.getLast().add(new HashSet<>());
                 String[] secondSplit = s.split("/");
                 for (String value : secondSplit) {
                     list.getLast().getLast().add(value.toLowerCase(new Locale("tr")));
                 }
             }
+            k++;
         }
         for (int i = 0; i < bank.size(); i++) {
             for (int j = 0; j < list.size(); j++) {
