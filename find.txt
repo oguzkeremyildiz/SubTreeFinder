@@ -1,4 +1,4 @@
-How ADJP/JJ/RB do/did/does/can/could/must/would NP/NNP/NNPS VB NP/NNP/NNPS
+1 How ADJP/JJ/RB do/did/does/can/could/must/would NP/NNP/NNPS VB NP/NNP/NNPS
 How ADJP/JJ/RB is/are/was/were NP/NNP/NNPS
 How ADVP do/did/does/can/could/must/would NP/NNP/NNPS VB/VBD
 How can/could NP/NNP/NNPS be VBD
