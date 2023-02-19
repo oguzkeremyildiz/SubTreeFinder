@@ -65,13 +65,16 @@ public class Main {
             }
             k++;
         }
+        // bank.size() == 74016
         for (int i = 0; i < bank.size(); i++) {
+            System.out.print(bank.get(i).getName() + ": ");
             for (int j = 0; j < list.size(); j++) {
                 if (isSubTree(bank.get(i), list.get(j))) {
-                    System.out.println(map.get(j) + ": " + bank.get(i).toSentence());
+                    System.out.print(map.get(j));
                     break;
                 }
             }
+            System.out.println();
         }
     }
 }
