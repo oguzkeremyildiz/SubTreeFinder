@@ -2,8 +2,8 @@ package org.example;
 
 import ParseTree.*;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class Main {
@@ -44,7 +44,7 @@ public class Main {
         return clone.isEmpty() && bool;
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
         HashMap<Integer, String> map = new HashMap<>();
         TreeBank bank = new TreeBank(new File("Trees"));
         LinkedList<LinkedList<HashSet<String>>> list = new LinkedList<>();
@@ -66,15 +66,19 @@ public class Main {
             k++;
         }
         // bank.size() == 74016
+        BufferedWriter outfile;
+        OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream("file.txt"), StandardCharsets.UTF_8);
+        outfile = new BufferedWriter(writer);
         for (int i = 0; i < bank.size(); i++) {
-            System.out.print(bank.get(i).getName() + ": ");
+            outfile.write(bank.get(i).getName() + ":");
             for (int j = 0; j < list.size(); j++) {
                 if (isSubTree(bank.get(i), list.get(j))) {
-                    System.out.print(map.get(j));
+                    outfile.write(" " + map.get(j));
                     break;
                 }
             }
-            System.out.println();
+            outfile.newLine();
         }
+        outfile.close();
     }
 }
