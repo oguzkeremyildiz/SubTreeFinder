@@ -6,7 +6,7 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
-public class Main {
+public class AutomaticQnoSearch {
 
     private static boolean dfs(ParseNode node, LinkedList<HashSet<String>> list) {
         if (node.getData().isPunctuation()) {
@@ -48,7 +48,7 @@ public class Main {
         HashMap<Integer, String> map = new HashMap<>();
         TreeBank bank = new TreeBank(new File("Trees"));
         LinkedList<LinkedList<HashSet<String>>> list = new LinkedList<>();
-        Scanner source = new Scanner(new File("find.txt"));
+        Scanner source = new Scanner(new File("automatic-qno-search-list.txt"));
         int k = 0;
         while (source.hasNext()) {
             String current = source.nextLine();
@@ -67,7 +67,7 @@ public class Main {
         }
         // bank.size() == 74016
         BufferedWriter outfile;
-        OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream("file.txt"), StandardCharsets.UTF_8);
+        OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream("automatic-qno-output.txt"), StandardCharsets.UTF_8);
         outfile = new BufferedWriter(writer);
         for (int i = 0; i < bank.size(); i++) {
             outfile.write(bank.get(i).getName() + ":");
