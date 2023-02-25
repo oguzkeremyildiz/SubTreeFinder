@@ -43,6 +43,10 @@ public class WordGroup {
         return false;
     }
 
+    public boolean ppmatch(AnnotatedWord word){
+        return (word.getPosTag().equals("IN") || word.getPosTag().equals("TO")) && options.get(0).equals("PP");
+    }
+
     public boolean tagMatch(AnnotatedWord word){
         if (optionType.equals(OptionType.TAG)){
             for (String option : options){
@@ -60,6 +64,7 @@ public class WordGroup {
                         case "TO":
                         case "RP":
                         case "JJR":
+                        case "CC":
                             return true;
                     }
                 } else {

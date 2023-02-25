@@ -19,23 +19,48 @@ public class SearchSentence {
         }
     }
 
+    public int groupSize(){
+        return groups.size();
+    }
+
     public ArrayList<AnnotatedPhrase> findGroups(AnnotatedSentence sentence){
         ArrayList<AnnotatedPhrase> phraseList = new ArrayList<AnnotatedPhrase>();
         int groupIndex = 0, wordIndex = 0;
+        boolean inPpMatch = false;
+        AnnotatedPhrase ppPhrase = null;
         while (groupIndex < groups.size() && wordIndex < sentence.wordCount()){
             WordGroup wordGroup = groups.get(groupIndex);
             AnnotatedWord word = (AnnotatedWord) sentence.getWord(wordIndex);
-            if (wordGroup.wordMatch(word) || wordGroup.tagMatch(word)){
-                AnnotatedPhrase annotatedPhrase = new AnnotatedPhrase(wordIndex, "" + (groupIndex + 1));
-                annotatedPhrase.addWord(word);
-                phraseList.add(annotatedPhrase);
-                groupIndex++;
+            if (Word.isPunctuation(word.getName())){
+                inPpMatch = false;
                 wordIndex++;
             } else {
-                if (wordGroup.isComplexGroup()){
+                if (wordGroup.wordMatch(word) || wordGroup.tagMatch(word)){
+                    AnnotatedPhrase annotatedPhrase = new AnnotatedPhrase(wordIndex, "" + (groupIndex + 1));
+                    annotatedPhrase.addWord(word);
+                    phraseList.add(annotatedPhrase);
                     groupIndex++;
-                } else {
                     wordIndex++;
+                    inPpMatch = false;
+                } else {
+                    if (!inPpMatch && wordGroup.ppmatch(word)){
+                        ppPhrase = new AnnotatedPhrase(wordIndex, "" + (groupIndex + 1));
+                        ppPhrase.addWord(word);
+                        phraseList.add(ppPhrase);
+                        wordIndex++;
+                        inPpMatch = true;
+                    } else {
+                        if (inPpMatch){
+                            ppPhrase.addWord(word);
+                            wordIndex++;
+                        } else {
+                            if (wordGroup.isComplexGroup()){
+                                groupIndex++;
+                            } else {
+                                wordIndex++;
+                            }
+                        }
+                    }
                 }
             }
         }

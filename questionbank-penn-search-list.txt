@@ -1,5 +1,5 @@
 1 how JJ/RB do/did/does/can/could/must/would NN/NNS/NNP/NNPS VB NN/NNS/NNP/NNPS
-2 how JJ/RB is/are/was/were  NN/NNS/NNP/NNPS
+2 how JJ/RB is/are/was/were NN/NNS/NNP/NNPS
 3 how RB do/did/does/can/could/must/would NN/NNS/NNP/NNPS VB
 4 how can/could NN/NNS/NNP/NNPS be VBD/VBN
 5 how do/did/does NN/NNS/NNP/NNPS VB NN/NNS/NNP/NNPS
@@ -33,13 +33,13 @@
 35 NN/NNS/NNP/NNPS VBP/VBZ/VBD how much NN/NNS/NNP/NNPS
 36 IN what NN/NNS/NNP/NNPS AUX NN/NNS/NNP/NNPS VBD/VBN
 37 IN what NN/NNS/NNP/NNPS do/did/does/will NN/NNS/NNP/NNPS VB
-38 IN what do/did/does NN/NNS/NNP/NNPS VB
-39 IN what do/did/does NN/NNS/NNP/NNPS VB NN/NNS/NNP/NNPS
+38 IN/TO what do/did/does NN/NNS/NNP/NNPS VB
+39 IN/TO what do/did/does NN/NNS/NNP/NNPS VB NN/NNS/NNP/NNPS
 40 what can/could/would/must NN/NNS/NNP/NNPS VB
 41 what can/could/would/must VB NN/NNS/NNP/NNPS
 42 what do/did/does NN/NNS/NNP/NNPS VB NN/NNS/NNP/NNPS
 43 what do/did/does NN/NNS/NNP/NNPS VB
-44 what is/are/was/were NN/NNS/NNP/NNPS VBG PP
+44 what is/are/was/were NN/NNS/NNP/NNPS VBN PP
 45 what AUX NN/NNS/NNP/NNPS VBD/VBN
 46 what is/are/was/were NN/NNS/NNP/NNPS
 47 what NN/NNS/NNP/NNPS do/did/does NN/NNS/NNP/NNPS VB
@@ -62,7 +62,7 @@
 64 when is/are/was/were NN/NNS/NNP/NNPS
 65 when is/are/was/were NN/NNS/NNP/NNPS PP
 66 when may/must/can/could/will NN/NNS/NNP/NNPS be VBD/VBN
-67 IN where do/did/does/will NN/NNS/NNP/NNPS VB NN/NNS/NNP/NNPS
+67 IN/TO where do/did/does/will NN/NNS/NNP/NNPS VB NN/NNS/NNP/NNPS
 68 IN where do/did/does/will NN/NNS/NNP/NNPS VB
 69 where do/did/does NN/NNS/NNP/NNPS VB NN/NNS/NNP/NNPS
 70 where do/did/does NN/NNS/NNP/NNPS VB
@@ -88,10 +88,10 @@
 90 NN/NNS/NNP/NNPS VBP/VBZ/VBD which NN/NNS/NNP/NNPS PP
 91 NN/NNS/NNP/NNPS VBP/VBZ/VBD which NN/NNS/NNP/NNPS
 92 PP NN/NNS/NNP/NNPS AUX VBD/VBN IN which NN/NNS/NNP/NNPS
-93 IN which NN/NNS/NNP/NNPS do/did/does NN/NNS/NNP/NNPS VB NN/NNS/NNP/NNPS
-94 IN which NN/NNS/NNP/NNPS do/did/does NN/NNS/NNP/NNPS VB
-95 IN which NN/NNS/NNP/NNPS AUX NN/NNS/NNP/NNPS VBD/VBN
-96 IN which NN/NNS/NNP/NNPS is/are/was/were NN/NNS/NNP/NNPS
+93 IN/TO which NN/NNS/NNP/NNPS do/did/does NN/NNS/NNP/NNPS VB NN/NNS/NNP/NNPS
+94 IN/TO which NN/NNS/NNP/NNPS do/did/does NN/NNS/NNP/NNPS VB
+95 IN/TO which NN/NNS/NNP/NNPS AUX NN/NNS/NNP/NNPS VBD/VBN
+96 IN/TO which NN/NNS/NNP/NNPS is/are/was/were NN/NNS/NNP/NNPS
 97 which NN/NNS/NNP/NNPS do/did/does NN/NNS/NNP/NNPS VB
 98 which NN/NNS/NNP/NNPS had VBD/VBN NN/NNS/NNP/NNPS
 99 which NN/NNS/NNP/NNPS AUX VBD/VBN PP
@@ -133,8 +133,8 @@
 136 who VBP/VBZ/VBD TO VB NN/NNS/NNP/NNPS
 137 who VBP/VBZ/VBD TO VB
 138 who VBP/VBZ/VBD VBG NN/NNS/NNP/NNPS
-139 IN whom do/did/does NN/NNS/NNP/NNPS VB
-140 IN whom is/are/was/were NN/NNS/NNP/NNPS VBD
+139 IN/TO whom do/did/does NN/NNS/NNP/NNPS VB
+140 IN/TO whom is/are/was/were NN/NNS/NNP/NNPS VBD/VBN
 141 NN/NNS/NNP/NNPS AUX VBN IN whom
 142 NN/NNS/NNP/NNPS VBP/VBZ/VBD whose NN/NNS/NNP/NNPS
 143 IN whose NN/NNS/NNP/NNPS AUX NN/NNS/NNP/NNPS VBD/VBN
@@ -182,6 +182,6 @@
 188 how many NN/NNS/NNP/NNPS is/are/was/were PP
 189 how JJ/RB do/did/does/can/could/must/would NN/NNS/NNP/NNPS VB
 190 what AUX VBD/VBN PP
-191 when is/are/was/were NN/NNS/NNP/NNPS RB VBD
+191 when is/are/was/were NN/NNS/NNP/NNPS RB VBD/VBN
 192 how many NN/NNS/NNP/NNPS is/are/was/were there
 193 who is/are/was/were NN/NNS/NNP/NNPS PP
