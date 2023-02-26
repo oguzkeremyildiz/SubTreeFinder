@@ -1,6 +1,6 @@
 package org.example;
 
-public enum OptionType {
+public enum PhraseType {
     WORD,
     TAG
 }

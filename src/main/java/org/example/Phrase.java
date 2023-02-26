@@ -5,36 +5,40 @@ import AnnotatedSentence.AnnotatedWord;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WordGroup {
+public class Phrase {
 
-    private ArrayList<String> options;
-    private OptionType optionType;
+    private ArrayList<String> parts;
+    private PhraseType phraseType;
 
-    public WordGroup(String groupText){
-        options = new ArrayList<String>(List.of(groupText.split("/")));
-        if (options.get(0).toUpperCase().equals(options.get(0))){
-            optionType = OptionType.TAG;
+    public Phrase(String groupText){
+        parts = new ArrayList<String>(List.of(groupText.split("/")));
+        if (parts.get(0).toUpperCase().equals(parts.get(0))){
+            phraseType = PhraseType.TAG;
         } else {
-            optionType = OptionType.WORD;
+            phraseType = PhraseType.WORD;
         }
     }
 
-    public boolean isComplexGroup(){
-        if (optionType.equals(OptionType.WORD)){
+    public String getPart(int index){
+        return parts.get(index);
+    }
+
+    public boolean isComplexPhrase(){
+        if (phraseType.equals(PhraseType.WORD)){
             return false;
         }
-        if (options.size() == 1 && !options.get(0).equals("PP")){
+        if (parts.size() == 1 && !parts.get(0).equals("PP")){
             return false;
         }
-        if (options.size() > 1 && options.get(0).startsWith("N")){
+        if (parts.size() > 1 && parts.get(0).startsWith("N")){
             return true;
         }
         return false;
     }
 
     public boolean wordMatch(AnnotatedWord word){
-        if (optionType.equals(OptionType.WORD)){
-            for (String option : options){
+        if (phraseType.equals(PhraseType.WORD)){
+            for (String option : parts){
                 if (option.equalsIgnoreCase(word.getName())){
                     return true;
                 }
@@ -44,12 +48,12 @@ public class WordGroup {
     }
 
     public boolean ppmatch(AnnotatedWord word){
-        return (word.getPosTag().equals("IN") || word.getPosTag().equals("TO")) && options.get(0).equals("PP");
+        return (word.getPosTag().equals("IN") || word.getPosTag().equals("TO")) && parts.get(0).equals("PP");
     }
 
     public boolean tagMatch(AnnotatedWord word){
-        if (optionType.equals(OptionType.TAG)){
-            for (String option : options){
+        if (phraseType.equals(PhraseType.TAG)){
+            for (String option : parts){
                 if (option.equalsIgnoreCase(word.getPosTag())){
                     switch (option){
                         case "VBD":

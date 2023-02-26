@@ -5,17 +5,17 @@ import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class SearchList {
+public class SentenceList {
 
-    private HashMap<Integer, SearchSentence> sentences;
+    private HashMap<Integer, SentenceOfPhrases> sentences;
 
-    public SearchList(String fileName){
+    public SentenceList(String fileName){
         try {
             Scanner input = new Scanner(new File(fileName));
             sentences = new HashMap<>();
             while (input.hasNextLine()){
                 String s = input.nextLine();
-                sentences.put(Integer.parseInt(s.substring(0, s.indexOf(" "))), new SearchSentence(s.substring(s.indexOf(" ") + 1)));
+                sentences.put(Integer.parseInt(s.substring(0, s.indexOf(" "))), new SentenceOfPhrases(s.substring(s.indexOf(" ") + 1)));
             }
             input.close();
         } catch (FileNotFoundException e) {
@@ -23,7 +23,7 @@ public class SearchList {
         }
     }
 
-    public SearchSentence getSentence(int key){
+    public SentenceOfPhrases getSentence(int key){
         return sentences.get(key);
     }
 }

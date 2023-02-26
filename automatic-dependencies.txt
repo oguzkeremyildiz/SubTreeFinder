@@ -1,0 +1,187 @@
+1 2/advmod 5/advmod 5/aux 5/nsubj 5/root 5/obj 5/punct
+2 2/advmod 2/root 2/cop 2/nsubj 2/punct
+3 2/advmod 5/advmod 5/aux 5/nsubj 5/root 5/punct
+4 5/advmod 5/aux 5/nsubj:pass 5/aux:pass 5/root 5/punct
+5 4/advmod 4/aux 4/nsubj 4/root 4/obj 4/punct
+6 4/advmod 4/aux 4/nsubj 4/root 4/punct
+8 4/advmod 4/aux:pass 4/nsubj:pass 4/root 4/advmod 4/punct
+9 4/advmod 4/aux:pass 4/nsubj:pass 4/root 4/punct
+10 5/advmod 5/aux 5/nsubj:pass 5/aux:pass 5/root 5/punct
+11 4/advmod 4/aux 4/nsubj 4/root 4/obj 4/obl 4/punct
+12 3/nsubj 3/aux 3/root 5/advmod 3/advmod -/- 3/punct
+13 2/nsubj 2/root 2/obl 6/case 2/advmod 5/advmod 2/punct
+14 2/nsubj 2/root 4/advmod 2/advmod 2/punct
+15 2/nsubj 2/root 4/advmod 2/advmod -/- 2/punct
+16 3/case 3/advmod 6/advmod 6/aux 6/nsubj 6/root 6/obj 6/punct
+17 3/case 3/advmod 6/advmod 6/aux 6/nsubj 6/root 6/punct
+18 3/case 3/advmod 6/advmod 6/aux:pass nsubj:pass 6/root 6/punct
+19 2/advmod 5/advmod 5/nsubj 5/cop 5/root 5/punct
+20 2/advmod 5/advmod 3/nsubj:pass 4/aux:pass 5/root 5/punct
+21 2/advmod 4/advmod 4/nsubj 4/root 4/obj 4/punct
+22 2/advmod 4/advmod 4/nsubj 4/root 4/punct
+24 2/advmod 5/advmod 5/aux 5/nsubj 5/root 5/punct
+25 2/advmod 5/advmod 5/cop 5/nsubj 5/root 5/punct
+26 2/advmod 2/root 2/cop 2/nsubj 2/punct
+27 2/advmod 6/amod 2/obl 6/aux 6/nsubj 6/root 6/punct
+28 2/advmod 3/amod 5/nsubj 5/cop 5/root 5/punct
+29 2/advmod 3/advmod 2/obl 5/cop 5/root 5/punct
+30 2/advmod 3/advmod 2/obl 5/aux:pass 5/root 5/punct
+31 2/advmod 5/advmod 4/case 2/obj 5/root 5/obj 5/punct
+32 2/advmod 5/advmod 5/root 5/nsubj 5/root 5/punct
+33 2/advmod 3/advmod 3/root 3/obj 3/punct
+34 2/advmod 3/advmod 3/root 5/case 3/obl 3/punct
+35 2/obj 2/root 4/advmod 2/advmod 2/obj 2/punct
+36 3/case 3/nmod 6/obl 6/aux:pass 6/nsubj:pass 6/root 6/punct
+37 3/case 3/nmod 6/obl 6/aux 6/nsubj 6/root 6/punct
+38 2/case 5/obl 5/aux 5/obj 5/root 5/punct
+39 2/case 5/obl 5/aux 5/nsubj 5/root 5/obj 5/punct
+40 4/obj 4/aux 4/nsubj 4/root 4/punct
+41 3/obj 3/aux 3/root 3/nsubj 3/punct
+42 4/obl 4/aux 4/nsubj 4/root 4/obj 4/punct
+43 4/obj 4/aux 4/nsubj 4/root 4/punct
+44 4/obl 4/aux 4/nsubj 4/root 1/case 4/punct
+45 4/obl 4/aux:pass 4/nsubj:pass 4/root 4/punct
+46 1/root 1/cop 1/nsubj 1/punct
+47 2/det 5/obj 5/aux 5/nsubj 5/root 5/punct
+48 2/det 2/root 2/cop 2/nsubj 2/case 2/punct
+49 1/root 1/cop 1/nsubj 1/obl 1/punct
+50 2/det 2/root 2/cop 2/nsubj 2/punct
+51 2/det 4/obj 4/aux:pass 4/root 4/punct
+52 2/det 3/nsubj 3/root 3/obj 3/punct
+53 2/nsubj 2/root 2/obj 2/punct
+54 2/nsubj 2/root 2/xcomp 5/case 2/advmod 2/punct
+55 2/case 6/advmod 6/aux:pass 6/nsubj:pass 6/aux:pass 6/root 6/punct
+56 2/case 5/advmod 5/aux 5/nsubj 5/root 5/punct
+57 4/advmod 4/aux 4/nsubj 4/root 4/punct
+58 4/advmod 4/aux 4/nsubj 4/root 4/obj 4/punct
+59 4/advmod 4/aux 4/nsubj 4/root 6/mark 4/xcomp 6/obj 4/punct
+60 4/advmod 4/aux 4/nsubj 4/root 6/mark 4/xcomp 4/punct
+61 4/advmod 4/aux 4/nsubj 4/root -/- 4/punct
+62 4/advmod 4/aux 4/nsubj 4/root 5/case 4/punct
+63 4/advmod 4/aux:pass 4/nsubj:pass 4/root 4/punct
+64 1/root 1/cop 1/nsubj 1/punct
+65 1/root 1/cop 1/nsubj 1/obl 1/punct
+66 5/advmod 5/aux 5/nsubj:pass 5/aux:pass 5/root 5/punct
+67 2/case 5/advmod 5/aux 5/nsubj 5/root 5/obj 5/punct
+68 2/case 5/advmod 5/aux 5/nsubj 5/root 5/punct
+69 4/advmod 4/aux 4/nsubj 4/root 4/obj 4/punct
+70 4/advmod 4/aux 4/nsubj 4/root 4/punct
+71 5/advmod 5/cop 5/nsubj 5/advmod 5/root 5/punct
+72 5/advmod 5/aux:pass 5/nsubj:pass 5/advmod 5/root 5/punct
+73 1/root 1/cop 1/nsubj 1/case 1/punct
+74 4/advmod 4/aux:pass 4/nsubj:pass 4/root 4/punct
+75 4/advmod 4/aux 4/nsubj 4/root 4/obj 4/punct
+76 4/advmod 4/aux 4/nsubj 4/root 4/punct
+77 1/root 1/cop 1/nsubj 1/punct
+78 3/nsubj 3/cop 3/root 6/case 6/det 3/nmod 3/punct
+79 -/- -/- -/- -/- -/-
+80 5/nsubj 5/cop 5/case 5/det 5/root 5/punct
+81 3/nsubj:pass 3/aux:pass 3/root 5/mark 3/xcomp 7/det 5/obj 3/punct
+82 3/nsubj:pass 3/aux:pass 3/root 6/case 6/det 3/obl 3/punct
+83 4/nsubj 4/cop 4/det 4/root 4/punct
+84 5/nsubj 4/case 4/det 1/nmod 5/root 5/obl 5/punct
+85 2/nsubj 2/root 5/case 5/det 2/obl 2/punct
+86 2/nsubj 2/root 4/det 2/obj 2/punct
+87 -/- -/- -/- -/- -/- -/-
+88 2/nsubj 2/root 4/det 2/obj 2/obl 2/punct
+89 2/nsubj 2/root 5/case 5/det 2/obl 2/punct
+90 2/nsubj 2/root 4/det 2/obj 2/obl 2/punct
+91 2/nsubj 2/root 4/det 2/obj 2/punct
+92 4/obl 4/nsubj:pass 4/aux:pass 4/root 7/case 7/det 4/obl 4/punct
+93 3/case 3/det 6/obl 6/aux 6/nsubj 6/root 6/obj 6/punct
+94 3/case 3/det 6/obl 6/aux 6/nsubj 6/root 6/punct
+95 3/case 3/det 6/obl 6/aux:pass 6/nsubj:pass 6/root 6/punct
+96 3/case 3/det 3/root 3/cop 3/nsubj 3/punct
+97 2/det 5/obj 5/aux 5/nsubj 5/root 5/punct
+98 2/det 4/nsubj 4/aux 4/root 4/obj 4/punct
+99 2/det 4/nsubj:pass 4/aux:pass 4/root 4/obl 4/punct
+100 2/det 4/nsubj:pass 4/aux:pass 4/root 4/punct
+101 2/det 2/root 2/cop 2/nsubj 2/case 2/punct
+102 2/det 3/nsubj 3/root 3/obj 3/punct
+103 2/det 3/nsubj 3/root 3/punct
+104 3/nsubj:pass 3/aux:pass 3/root 5/case 3/obl 3/punct
+105 2/nsubj 2/root 4/case 2/obl 2/punct
+106 2/nsubj 2/root 2/obj 2/obl 2/punct
+107 3/nsubj 3/advmod 3/root 3/obj 3/punct
+108 3/nsubj 3/advmod 3/root 3/obl 3/punct
+109 4/obl 4/aux 4/nsubj 4/root 4/case 4/punct
+110 4/obj 4/aux 4/nsubj 4/root 4/obj 4/punct
+111 4/obj 4/aux 4/nsubj 4/root 4/punct
+112 3/nsubj 3/cop 3/root 3/obl 3/punct
+113 4/nsubj 4/cop 4/advmod 4/root 4/punct
+114 4/obl 4/cop 4/nsubj 4/root 1/case 4/punct
+116 4/obj 4/aux 4/nsubj 4/root 4/punct
+117 4/obl 4/aux:pass 4/nsubj:pass 4/root 1/case 4/punct
+118 1/root 1/cop 1/nsubj 1/punct
+119 1/root 1/cop 1/obl 1/punct
+120 3/nsubj:pass 3/aux:pass 3/root 3/obj 3/punct
+121 3/nsubj:pass 3/aux:pass 3/root 5/mark 3/xcomp 3/punct
+122 3/nsubj:pass 3/aux:pass 3/root 3/obl 3/punct
+123 3/nsubj 3/aux 3/root 3/punct
+124 4/obj 4/aux 4/nsubj 4/root 4/punct
+125 3/nsubj 3/aux 3/root 3/obj 3/punct
+126 2/nsubj 2/root 2/obj 2/xcomp 2/punct
+127 2/nsubj 2/root 2/obj 2/advmod 2/punct
+128 2/nsubj 2/root 2/obj 5/cc 3/obj 2/punct
+129 2/nsubj 2/root 2/obj 2/obj 2/punct
+130 2/nsubj 2/root 2/obj 2/obl 2/punct
+131 2/nsubj 2/root 2/obj 2/compound:prt 2/punct
+132 2/nsubj 2/root 2/obj 2/punct
+133 2/nsubj 2/root 2/obl 2/punct
+134 2/nsubj 2/root 2/compound:prt 2/obj 2/punct
+135 2/nsubj 2/root 2/compound:prt 2/case 2/punct
+136 2/nsubj 2/root 4/mark 2/xcomp 4/obj 2/punct
+137 2/nsubj 2/root 4/mark 2/xcomp 2/punct
+138 2/nsubj 2/root 2/xcomp 3/obj 2/punct
+139 2/case 5/obl 5/aux 5/nsubj 5/root 5/punct
+140 2/case 5/obl 5/aux:pass 5/nsubj:pass 5/root 5/punct
+141 3/nsubj:pass 3/aux:pass 3/root 5/case 3/obl 3/punct
+142 2/nsubj 2/root 4/det 2/obj 2/punct
+143 -/- -/- -/- -/- -/- -/-
+144 2/det 4/nsubj 4/advmod 4/root 4/obj 4/punct
+145 2/det 5/obj 5/aux 5/nsubj 5/root 5/punct
+146 2/det 4/nsubj 4/cop 4/root 4/punct
+147 2/det 4/nsubj:pass 4/aux:pass 4/root 4/obj 4/punct
+148 2/det 4/nsubj:pass 4/aux:pass 4/root 4/punct
+150 2/advmod 4/aux 4/nsubj 4/root 6/case 4/obl 4/punct
+151 2/advmod 4/aux 4/nsubj 4/root 4/obj 4/punct
+152 2/advmod 4/aux 4/nsubj 4/root 6/mark 4/xcomp 6/obj 4/punct
+153 2/advmod 4/aux 4/nsubj 4/root 6/mark 4/xcomp 4/punct
+154 2/advmod 4/aux 4/nsubj 4/root 4/xcomp 4/punct
+155 4/advmod 4/aux 4/nsubj 4/root 4/punct
+156 5/advmod 5/aux 5/nsubj:pass 5/aux:pass 5/root 5/punct
+157 2/advmod 4/cop 4/nsubj 4/root 6/case 2/obl 4/punct
+158 2/advmod 4/aux 4/nsubj 4/root 4/punct
+159 2/advmod 4/cop 4/nsubj 4/root 4/punct
+160 2/advmod 4/aux 4/nsubj 4/root 4/obl 4/punct
+161 2/advmod 4/aux:pass 4/nsubj:pass 4/root 4/obj 4/punct
+162 2/advmod 4/aux 4/nsubj 4/root 4/punct
+163 2/advmod 4/aux 4/nsubj 4/root 4/obj 4/punct
+164 3/cop 3/nsubj 3/root 3/punct
+165 3/cop 3/nsubj 3/root 5/case 4/nmod 3/punct
+166 3/cop 3/nsubj 3/root 5/mark 3/xcomp 5/obj 3/punct
+167 3/cop 3/nsubj 3/root 5/mark 3/xcomp 3/punct
+169 1/root 1/nsubj 1/amod 5/case 1/obl 1/punct
+170 1/root 1/nsubj 1/obj 1/punct
+171 3/aux:pass 3/nsubj:pass 3/root 3/obj 3/punct
+172 3/aux:pass 3/nsubj:pass 3/root 3/obl 3/punct
+174 3/aux 3/nsubj 3/root 3/obj 3/punct
+175 3/aux 3/nsubj 3/root 3/advmod 3/punct
+176 2/nsubj 2/root 2/obl 2/punct
+177 2/det 3/nsubj 3/root 3/obj 3/punct
+178 2/amod 4/nsubj 4/cop 4/root 4/punct
+179 2/nsubj 2/root 2/obl 2/punct
+180 2/det 3/nsubj 3/root 3/obj 3/punct
+181 2/det 4/nsubj 4/cop 4/root 4/punct
+182 2/det 4/nsubj 4/advmod 4/root 4/obj 4/punct
+183 2/advmod 4/cop 4/nsubj 4/root 4/punct
+184 2/case 5/obl 5/aux:pass 5/nsubj:pass 5/root 5/punct
+185 2/amod 5/obj 5/aux 5/nsubj 5/root 5/punct
+186 2/amod 3/nsubj 3/root 3/obl 3/punct
+187 2/amod 3/nsubj 3/root 3/obj 3/punct
+188 2/amod 3/nsubj 3/root 3/nmod 3/punct
+189 2/advmod 5/advmod 5/aux 5/nsubj 5/root 5/punct
+190 3/nsubj:pass 3/aux:pass 3/root 3/obl 3/punct
+191 5/advmod 5/aux:pass 5/nsubj:pass 5/advmod 5/root 5/punct
+192 2/amod 3/nsubj 3/root 3/expl 3/punct
+193 3/nsubj 3/cop 3/root 3/obl 3/punct

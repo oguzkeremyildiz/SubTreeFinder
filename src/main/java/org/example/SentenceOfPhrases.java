@@ -7,15 +7,15 @@ import Dictionary.Word;
 
 import java.util.ArrayList;
 
-public class SearchSentence {
+public class SentenceOfPhrases {
 
-    private ArrayList<WordGroup> groups;
+    private ArrayList<Phrase> groups;
 
-    public SearchSentence(String text){
+    public SentenceOfPhrases(String text){
         groups = new ArrayList<>();
         String[] items = text.split(" ");
         for (String item : items) {
-            groups.add(new WordGroup(item));
+            groups.add(new Phrase(item));
         }
     }
 
@@ -23,19 +23,26 @@ public class SearchSentence {
         return groups.size();
     }
 
+    public Phrase getPhrase(int index){
+        if (index < groups.size()){
+            return groups.get(index);
+        } else {
+            return null;
+        }
+    }
     public ArrayList<AnnotatedPhrase> findGroups(AnnotatedSentence sentence){
         ArrayList<AnnotatedPhrase> phraseList = new ArrayList<AnnotatedPhrase>();
         int groupIndex = 0, wordIndex = 0;
         boolean inPpMatch = false;
         AnnotatedPhrase ppPhrase = null;
         while (groupIndex < groups.size() && wordIndex < sentence.wordCount()){
-            WordGroup wordGroup = groups.get(groupIndex);
+            Phrase phrase = groups.get(groupIndex);
             AnnotatedWord word = (AnnotatedWord) sentence.getWord(wordIndex);
             if (Word.isPunctuation(word.getName())){
                 inPpMatch = false;
                 wordIndex++;
             } else {
-                if (wordGroup.wordMatch(word) || wordGroup.tagMatch(word)){
+                if (phrase.wordMatch(word) || phrase.tagMatch(word)){
                     AnnotatedPhrase annotatedPhrase = new AnnotatedPhrase(wordIndex, "" + (groupIndex + 1));
                     annotatedPhrase.addWord(word);
                     phraseList.add(annotatedPhrase);
@@ -43,7 +50,7 @@ public class SearchSentence {
                     wordIndex++;
                     inPpMatch = false;
                 } else {
-                    if (!inPpMatch && wordGroup.ppmatch(word)){
+                    if (!inPpMatch && phrase.ppmatch(word)){
                         ppPhrase = new AnnotatedPhrase(wordIndex, "" + (groupIndex + 1));
                         ppPhrase.addWord(word);
                         phraseList.add(ppPhrase);
@@ -54,7 +61,7 @@ public class SearchSentence {
                             ppPhrase.addWord(word);
                             wordIndex++;
                         } else {
-                            if (wordGroup.isComplexGroup()){
+                            if (phrase.isComplexPhrase()){
                                 groupIndex++;
                             } else {
                                 wordIndex++;
