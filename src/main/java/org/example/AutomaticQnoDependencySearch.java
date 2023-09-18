@@ -35,7 +35,9 @@ public class AutomaticQnoDependencySearch {
                 if (!(strings.contains("NN") || strings.contains("PP"))) {
                     if (!depList.get(j).equals("-")) {
                         if (current.getValue() != i || !current.getKey().equals(depList.get(j))) {
-                            return false;
+                            if (!strings.contains("IN")) {
+                                return false;
+                            }
                         }
                     }
                     i++;
