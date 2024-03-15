@@ -1,6 +1,7 @@
 package org.example;
 
 import Cookies.Set.DisjointSet;
+import Cookies.Tuple.Pair;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -16,9 +17,10 @@ public class AutomaticQnoDependencySearch {
         }
         return -1;
     }
-    private static boolean isMatch(String[] sentence, DisjointSet<String> set, LinkedList<HashSet<String>> rules) {
+    private static boolean isMatch(String[] sentence, DisjointSet<String> set, LinkedList<String> depList, HashMap<Integer, Pair<String, Integer>> map, LinkedList<HashSet<String>> rules) {
         int i = 0;
-        for (HashSet<String> strings : rules) {
+        for (int j = 0; j < rules.size(); j++) {
+            HashSet<String> strings = rules.get(j);
             if (i >= sentence.length - 1) {
                 return false;
             }
@@ -29,18 +31,23 @@ public class AutomaticQnoDependencySearch {
                 }
                 i++;
             } else {
+                Pair<String, Integer> current = map.get(set.findSet(i));
                 if (!(strings.contains("NN") || strings.contains("PP"))) {
-                    if (i + 1 < sentence.length && set.findSet(i) == set.findSet(i + 1)) {
-                        if (!strings.contains("IN")) {
-                            return false;
+                    if (!depList.get(j).equals("-")) {
+                        if (current.getValue() != i || !current.getKey().equals(depList.get(j))) {
+                            if (!strings.contains("IN")) {
+                                return false;
+                            }
                         }
                     }
                     i++;
                 } else {
-                    i++;
-                    while (i > 0 && i < sentence.length && set.findSet(i) == set.findSet(i - 1)) {
-                        i++;
+                    if (!depList.get(j).equals("-")) {
+                        if (!current.getKey().equals(depList.get(j))) {
+                            return false;
+                        }
                     }
+                    i = current.getValue() + 1;
                 }
             }
         }
@@ -62,6 +69,25 @@ public class AutomaticQnoDependencySearch {
         return set;
     }
 
+    private static HashMap<Integer, Pair<String, Integer>> createMap(DisjointSet<String> set, String[] sentence, String[] dep) {
+        int rootIndex = findRoot(dep);
+        HashMap<Integer, Pair<String, Integer>> pairMap = new HashMap();
+        int i = 0;
+        while (i < sentence.length - 1) {
+            int key = set.findSet(i);
+            String pairKey = dep[i].substring(0, dep[i].indexOf("/"));
+            while (i + 1 < sentence.length && set.findSet(i) == set.findSet(i + 1)) {
+                i++;
+                if (Integer.parseInt(dep[i].substring(dep[i].indexOf("/") + 1)) == rootIndex + 1) {
+                    pairKey = dep[i].substring(0, dep[i].indexOf("/"));
+                }
+            }
+            pairMap.put(key, new Pair<>(pairKey, i));
+            i++;
+        }
+        return pairMap;
+    }
+
     private static String[] editList(String[] strings) {
         ArrayList<String> list = new ArrayList<>();
         for (String string : strings) {
@@ -75,10 +101,18 @@ public class AutomaticQnoDependencySearch {
     public static void main(String[] args) throws IOException {
         HashMap<Integer, String> map = new HashMap<>();
         LinkedList<LinkedList<HashSet<String>>> list = new LinkedList<>();
+        LinkedList<LinkedList<String>> depList = new LinkedList<>();
         Scanner source = new Scanner(new File("automatic-qno-search-list.txt"));
+        Scanner autoDependencies = new Scanner(new File("automatic-dependencies.txt"));
         int k = 0;
         while (source.hasNext()) {
             String current = source.nextLine();
+            String[] autoDeps = autoDependencies.nextLine().split(" ");
+            LinkedList<String> ls = new LinkedList<>();
+            for (int i = 1; i < autoDeps.length - 1; i++) {
+                ls.add(autoDeps[i].substring(autoDeps[i].indexOf("/") + 1));
+            }
+            depList.add((LinkedList<String>) ls.clone());
             list.add(new LinkedList<>());
             String[] firstSplit = current.split(" ");
             map.put(k, firstSplit[0]);
@@ -101,18 +135,23 @@ public class AutomaticQnoDependencySearch {
         while (dependencySource.hasNext()) {
             String dependencies = dependencySource.nextLine();
             String[] sentence = editList(sentenceSource.nextLine().split(" "));
-            if (!dependencies.isEmpty()) {
-                String[] dep = dependencies.split(" ");
-                DisjointSet<String> set = createDisjointSet(sentence, dep);
-                for (int i = 0; i < list.size(); i++) {
-                    if (isMatch(sentence, set, list.get(i))) {
-                        outfile.write(map.get(i));
-                        break;
+            try {
+                if (!dependencies.isEmpty()) {
+                    String[] dep = dependencies.split(" ");
+                    DisjointSet<String> set = createDisjointSet(sentence, dep);
+                    HashMap<Integer, Pair<String, Integer>> map1 = createMap(set,sentence, dep);
+                    for (int i = 0; i < list.size(); i++) {
+                        if (isMatch(sentence, set, depList.get(i), map1, list.get(i))) {
+                            outfile.write(map.get(i));
+                            break;
+                        }
                     }
                 }
+                System.out.println((m + 1) + ". done.");
+            } catch (Exception e) {
+                System.out.println((m + 1) + ". not done.");
             }
             outfile.newLine();
-            System.out.println((m + 1) + ". done.");
             m++;
         }
         outfile.close();
