@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class SentenceOfPhrases {
 
-    private ArrayList<Phrase> groups;
+    private final ArrayList<Phrase> groups;
 
     public SentenceOfPhrases(String text){
         groups = new ArrayList<>();
@@ -31,7 +31,7 @@ public class SentenceOfPhrases {
         }
     }
     public ArrayList<AnnotatedPhrase> findGroups(AnnotatedSentence sentence){
-        ArrayList<AnnotatedPhrase> phraseList = new ArrayList<AnnotatedPhrase>();
+        ArrayList<AnnotatedPhrase> phraseList = new ArrayList<>();
         int groupIndex = 0, wordIndex = 0;
         boolean inPpMatch = false;
         AnnotatedPhrase ppPhrase = null;

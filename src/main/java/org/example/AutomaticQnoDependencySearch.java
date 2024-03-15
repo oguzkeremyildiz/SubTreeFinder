@@ -64,9 +64,9 @@ public class AutomaticQnoDependencySearch {
 
     private static String[] editList(String[] strings) {
         ArrayList<String> list = new ArrayList<>();
-        for (int i = 0; i < strings.length; i++) {
-            if (!strings[i].isEmpty()) {
-                list.add(strings[i]);
+        for (String string : strings) {
+            if (!string.isEmpty()) {
+                list.add(string);
             }
         }
         return list.toArray(new String[0]);

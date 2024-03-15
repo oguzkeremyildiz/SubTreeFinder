@@ -7,11 +7,11 @@ import java.util.List;
 
 public class Phrase {
 
-    private ArrayList<String> parts;
-    private PhraseType phraseType;
+    private final ArrayList<String> parts;
+    private final PhraseType phraseType;
 
     public Phrase(String groupText){
-        parts = new ArrayList<String>(List.of(groupText.split("/")));
+        parts = new ArrayList<>(List.of(groupText.split("/")));
         if (parts.get(0).toUpperCase().equals(parts.get(0))){
             phraseType = PhraseType.TAG;
         } else {
@@ -30,10 +30,7 @@ public class Phrase {
         if (parts.size() == 1 && !parts.get(0).equals("PP")){
             return false;
         }
-        if (parts.size() > 1 && parts.get(0).startsWith("N")){
-            return true;
-        }
-        return false;
+        return parts.size() > 1 && parts.get(0).startsWith("N");
     }
 
     public boolean wordMatch(AnnotatedWord word){

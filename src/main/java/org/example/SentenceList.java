@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class SentenceList {
 
-    private HashMap<Integer, SentenceOfPhrases> sentences;
+    private final HashMap<Integer, SentenceOfPhrases> sentences;
 
     public SentenceList(String fileName){
         try {
