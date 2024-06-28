@@ -1,6 +1,7 @@
 package org.example;
 
 import Cookies.Tuple.Pair;
+import DataStructure.CounterHashMap;
 import ParseTree.*;
 
 import java.io.*;
@@ -10,7 +11,6 @@ public class QnoConstituencyRulesGenerator {
 
     private static ArrayList<ParseNode> dfs(HashMap<ParseNode, ArrayList<ParseNode>> rangeMap, ParseNode current) {
         ArrayList<ParseNode> result = new ArrayList<>();
-        // getChild() leaf?
         if (current.isLeaf()) {
             result.add(current);
             return result;
@@ -39,12 +39,20 @@ public class QnoConstituencyRulesGenerator {
 
     private static void calculatePairMap(HashMap<Integer, ArrayList<Pair<Integer, String>>> pairMap, HashSet<String> tags, HashMap<ParseNode, ArrayList<ParseNode>> rangeMap, HashMap<ParseNode, Integer> noMap, ParseNode current) {
         if (!current.isLeaf()) {
-            if (tags.contains(current.getData().getName())) {
-                ArrayList<ParseNode> range = rangeMap.get(current);
+            String currentData = current.getData().getName();
+            String childData = current.getChild(0).getData().getName();
+            ArrayList<ParseNode> range = rangeMap.get(current);
+            // do, did, does will be added.
+            if (childData.equals("how") || childData.equals("much") || childData.equals("many") || childData.equals("what") || childData.equals("when") || childData.equals("where") || childData.equals("which") || childData.equals("is") || childData.equals("are") || childData.equals("was") || childData.equals("were")) {
                 if (!pairMap.containsKey(noMap.get(range.get(0)))) {
                     pairMap.put(noMap.get(range.get(0)), new ArrayList<>());
                 }
-                pairMap.get(noMap.get(range.get(0))).add(new Pair<>(noMap.get(range.get(range.size() - 1)), current.getData().getName()));
+                pairMap.get(noMap.get(range.get(0))).add(new Pair<>(noMap.get(range.get(range.size() - 1)), childData));
+            } else if (tags.contains(currentData)) {
+                if (!pairMap.containsKey(noMap.get(range.get(0)))) {
+                    pairMap.put(noMap.get(range.get(0)), new ArrayList<>());
+                }
+                pairMap.get(noMap.get(range.get(0))).add(new Pair<>(noMap.get(range.get(range.size() - 1)), currentData));
             }
             for (int i = 0; i < current.numberOfChildren(); i++) {
                 ParseNode child = current.getChild(i);
@@ -53,9 +61,19 @@ public class QnoConstituencyRulesGenerator {
         }
     }
 
-    private static void backtrack(HashMap<Integer, ArrayList<Pair<Integer, String>>> pairMap, HashMap<String, String> tagMap, HashSet<ArrayList<String>> possibilities, ArrayList<String> possibility, int lastIndex, int treeSize) {
+    private static String removePunctuations(ArrayList<String> list) {
+        StringBuilder result = new StringBuilder();
+        for (String s : list) {
+            if (!(s.equals(".") || s.equals(","))) {
+                result.append(s).append(" ");
+            }
+        }
+        return result.toString();
+    }
+
+    private static void backtrack(HashMap<Integer, ArrayList<Pair<Integer, String>>> pairMap, HashMap<String, String> tagMap, CounterHashMap<String> possibilities, ArrayList<String> possibility, int lastIndex, int treeSize) {
         if (lastIndex - 1 == treeSize) {
-            possibilities.add((ArrayList<String>) possibility.clone());
+            possibilities.put(removePunctuations(possibility));
         } else {
             if (pairMap.containsKey(lastIndex)) {
                 ArrayList<Pair<Integer, String>> candidates = pairMap.get(lastIndex);
@@ -71,7 +89,7 @@ public class QnoConstituencyRulesGenerator {
     public static void main(String[] args) throws IOException {
         TreeBank bank = new TreeBank(new File("Trees"));
         Scanner source = new Scanner(new File("automatic-qno-search-list.txt"));
-        HashSet<ArrayList<String>> possibilities = new HashSet<>();
+        CounterHashMap<String> possibilities = new CounterHashMap<>();
         HashSet<String> tags = new HashSet<>();
         HashMap<String, String> tagMap = new HashMap<>();
         HashSet<String> tagSet = new HashSet<>();
@@ -103,16 +121,9 @@ public class QnoConstituencyRulesGenerator {
             backtrack(pairMap, tagMap, possibilities, new ArrayList<>(), 0, treeSize);
             pairMap.clear();
         }
-        int iterator = 1;
-        for (ArrayList<String> possibility : possibilities) {
-            System.out.print(iterator);
-            for (String s : possibility) {
-                if (!(s.equals(".") || s.equals(","))) {
-                    System.out.print(" " + s);
-                }
-            }
-            System.out.println();
-            iterator++;
+        List<Map.Entry<String, Integer>> topNList = possibilities.topN(1000);
+        for (Map.Entry<String, Integer> entry : topNList) {
+            System.out.println(entry.getKey() + "-> " + entry.getValue());
         }
     }
 }
