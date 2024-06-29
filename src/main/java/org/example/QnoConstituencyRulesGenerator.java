@@ -20,9 +20,8 @@ public class QnoConstituencyRulesGenerator {
             lastIndex = p.getValue();
         }
         String currentData = current.getData().getName();
-        String childData = current.getChild(0).getData().getName();
-        // do, did, does will be added.
-        if (childData.equals("how") || childData.equals("much") || childData.equals("many") || childData.equals("what") || childData.equals("when") || childData.equals("where") || childData.equals("which") || childData.equals("is") || childData.equals("are") || childData.equals("was") || childData.equals("were")) {
+        String childData = current.getChild(0).getData().getName().toLowerCase();
+        if (childData.equals("why") || childData.equals("whose") || childData.equals("whom") || childData.equals("had") || childData.equals("may") || childData.equals("been") || childData.equals("until") || childData.equals("have") || childData.equals("has") || childData.equals("since") || childData.equals("of") || childData.equals("will") || childData.equals("be") || childData.equals("would") || childData.equals("must") || childData.equals("could") || childData.equals("can") || childData.equals("does") || childData.equals("did") || childData.equals("do") || childData.equals("who") || childData.equals("how") || childData.equals("much") || childData.equals("many") || childData.equals("what") || childData.equals("when") || childData.equals("where") || childData.equals("which") || childData.equals("is") || childData.equals("are") || childData.equals("was") || childData.equals("were")) {
             if (!rangeMap.containsKey(index)) {
                 rangeMap.put(index, new ArrayList<>());
             }
@@ -42,19 +41,17 @@ public class QnoConstituencyRulesGenerator {
         return new Pair<>(rangeMap, p.getValue() - 1);
     }
 
-    private static String removePunctuations(ArrayList<String> list) {
+    private static String toString(ArrayList<String> list) {
         StringBuilder result = new StringBuilder();
         for (String s : list) {
-            if (!(s.equals(".") || s.equals(","))) {
-                result.append(s).append(" ");
-            }
+            result.append(s).append(" ");
         }
         return result.toString();
     }
 
     private static void backtrack(HashMap<Integer, ArrayList<Pair<Integer, String>>> pairMap, HashMap<String, String> tagMap, CounterHashMap<String> possibilities, ArrayList<String> possibility, int lastIndex, int treeSize) {
         if (lastIndex - 1 == treeSize) {
-            possibilities.put(removePunctuations(possibility));
+            possibilities.put(toString(possibility));
         } else {
             if (pairMap.containsKey(lastIndex)) {
                 ArrayList<Pair<Integer, String>> candidates = pairMap.get(lastIndex);
