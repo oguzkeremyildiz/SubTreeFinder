@@ -66,7 +66,7 @@ public class QnoConstituencyRulesGenerator {
 
     public static void main(String[] args) throws IOException {
         TreeBank bank = new TreeBank(new File("Trees"));
-        Scanner source = new Scanner(new File("automatic-qno-search-list.txt"));
+        Scanner source = new Scanner(new File("automatic-qno-search-tags.txt"));
         CounterHashMap<String> possibilities = new CounterHashMap<>();
         HashMap<String, String> tagMap = new HashMap<>();
         while (source.hasNextLine()) {
