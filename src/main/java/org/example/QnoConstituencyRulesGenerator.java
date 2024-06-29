@@ -49,15 +49,19 @@ public class QnoConstituencyRulesGenerator {
         return result.toString();
     }
 
-    private static void backtrack(HashMap<Integer, ArrayList<Pair<Integer, String>>> pairMap, HashMap<String, String> tagMap, CounterHashMap<String> possibilities, ArrayList<String> possibility, int lastIndex, int treeSize) {
+    private static void backtrack(HashMap<Integer, ArrayList<Pair<Integer, String>>> pairMap, HashMap<String, String> tagMap, CounterHashMap<String> possibilities, ArrayList<String> possibility, int lastIndex, int treeSize, HashSet<String> visited) {
         if (lastIndex - 1 == treeSize) {
-            possibilities.put(toString(possibility));
+            String str = toString(possibility);
+            if (!visited.contains(str)) {
+                visited.add(str);
+                possibilities.put(toString(possibility));
+            }
         } else {
             if (pairMap.containsKey(lastIndex)) {
                 ArrayList<Pair<Integer, String>> candidates = pairMap.get(lastIndex);
                 for (Pair<Integer, String> candidate : candidates) {
                     possibility.add(tagMap.get(candidate.getValue()));
-                    backtrack(pairMap, tagMap, possibilities, possibility, candidate.getKey() + 1, treeSize);
+                    backtrack(pairMap, tagMap, possibilities, possibility, candidate.getKey() + 1, treeSize, visited);
                     possibility.remove(possibility.size() - 1);
                 }
             }
@@ -86,7 +90,8 @@ public class QnoConstituencyRulesGenerator {
             ParseTree parseTree = bank.get(i);
             ParseNode root = parseTree.getRoot();
             Pair<HashMap<Integer, ArrayList<Pair<Integer, String>>>, Integer> pair = calculateNodeRange(root, tagMap);
-            backtrack(pair.getKey(), tagMap, possibilities, new ArrayList<>(), 0, pair.getValue());
+            HashSet<String> visited = new HashSet<>();
+            backtrack(pair.getKey(), tagMap, possibilities, new ArrayList<>(), 0, pair.getValue(), visited);
         }
         List<Map.Entry<String, Integer>> topNList = possibilities.topN(1000);
         for (Map.Entry<String, Integer> entry : topNList) {
