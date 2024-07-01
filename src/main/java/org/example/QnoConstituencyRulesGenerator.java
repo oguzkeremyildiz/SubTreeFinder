@@ -35,13 +35,13 @@ public class QnoConstituencyRulesGenerator {
         return new Pair<>(index, lastIndex);
     }
 
-    private static Pair<HashMap<Integer, ArrayList<Pair<Integer, String>>>, Integer> calculateNodeRange(ParseNode root, HashMap<String, String> tagMap) {
+    protected static Pair<HashMap<Integer, ArrayList<Pair<Integer, String>>>, Integer> calculateNodeRange(ParseNode root, HashMap<String, String> tagMap) {
         HashMap<Integer, ArrayList<Pair<Integer, String>>> rangeMap = new HashMap<>();
         Pair<Integer, Integer> p = dfs(rangeMap, root, 0, tagMap);
         return new Pair<>(rangeMap, p.getValue() - 1);
     }
 
-    private static String toString(ArrayList<String> list) {
+    protected static String toString(ArrayList<String> list) {
         StringBuilder result = new StringBuilder();
         for (String s : list) {
             result.append(s).append(" ");
@@ -68,10 +68,8 @@ public class QnoConstituencyRulesGenerator {
         }
     }
 
-    public static void main(String[] args) throws IOException {
-        TreeBank bank = new TreeBank(new File("Trees"));
+    protected static HashMap<String, String> generateTagMap() throws FileNotFoundException {
         Scanner source = new Scanner(new File("automatic-qno-search-tags.txt"));
-        CounterHashMap<String> possibilities = new CounterHashMap<>();
         HashMap<String, String> tagMap = new HashMap<>();
         while (source.hasNextLine()) {
             String line = source.nextLine();
@@ -86,6 +84,13 @@ public class QnoConstituencyRulesGenerator {
             }
         }
         source.close();
+        return tagMap;
+    }
+
+    public static void main(String[] args) throws IOException {
+        TreeBank bank = new TreeBank(new File("Trees"));
+        CounterHashMap<String> possibilities = new CounterHashMap<>();
+        HashMap<String, String> tagMap = generateTagMap();
         for (int i = 0; i < bank.size(); i++) {
             ParseTree parseTree = bank.get(i);
             ParseNode root = parseTree.getRoot();
