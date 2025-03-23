@@ -186,3 +186,4 @@
 191 when is/are/was/were NP/NNP/NNS/NN/NNPS ADVP VBD
 192 how many NP/NNP/NNS/NN/NNPS is/are/was/were there
 193 who is/are/was/were NP/NNP/NNS/NN/NNPS PP
+194 . ,
